@@ -9,7 +9,12 @@ class ManagementUser extends Controller
    
     public function index()
     {
-        return view('home');
+        $nama = "arvita Agus Kurniasari";
+
+        $pelajaran = ["Algoritma & pemograman","Kalkulus","Pemograman Web"];
+
+        return view('home', compact('nama','pelajaran'));
+
     }
 
   
